@@ -17,7 +17,7 @@ $usuario = substr($email, 0, $posicaoDoArroba); //
 echo mb_strtoupper($usuario) . PHP_EOL;
 echo substr($email, $posicaoDoArroba + 1) . PHP_EOL;
 */
-list($sobrenome, $nome) = explode(' ',$nome);
+list($nome, $sobrenome ) = explode(' ',$nome);
 
 echo 'Nome ' . $nome . PHP_EOL;
 echo 'Sobrenome ' . $sobrenome . PHP_EOL;

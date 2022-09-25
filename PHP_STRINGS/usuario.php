@@ -1,6 +1,6 @@
 <?php
 
-$email = 'adilson@alura.com.br';
+$email = ',. adilson@alura.com.br ,.';
 $senha = 'áéíóú';
 
 echo mb_strlen($senha) . PHP_EOL; // função descobre tamanho da string
@@ -15,3 +15,6 @@ $usuario = substr($email, 0, $posicaoDoArroba);
 
 echo mb_strtoupper($usuario) . PHP_EOL;
 echo substr($email, $posicaoDoArroba + 1) . PHP_EOL;
+echo trim($email) . PHP_EOL;
+echo ltrim($email, ',') . PHP_EOL;
+echo rtrim($email, ',') . PHP_EOL;

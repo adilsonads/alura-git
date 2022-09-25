@@ -1,10 +1,13 @@
 <?php
 
-$num = [0, 1, 2, 3];
 
-for($i = 0; $i <= 1000; $i++){
-    echo $i . PHP_EOL;
+for($i = 0; $i <= 10; $i++){
+    $num = [];
+    array_push($num, $i);
+    
     
     echo count($num) . PHP_EOL;
 }
 echo "FIM";
+
+var_dump($num);
